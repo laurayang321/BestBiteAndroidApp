@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base Colours (Unused) -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Custom Colours -->
+    <color name="bestBiteRed">#CF000F</color>
+    <color name="bestBiteRedDark">#96281B</color>
+    <color name="bestBiteWhite">#EEEEEE</color>
+    <color name="cameraGrey">#eaeaea</color>
+    <color name="uploadGrassGreen">#fafaf5</color>
+    <color name="recipeTitle">#a2a18f</color>
+    <color name="backgroundWhite">#ffffff</color>
+    <color name="buttonOrange">#ff7f00</color>
+    <color name="textGreen">#8dae13</color>
+    <color name="homePageBG">#32f0f0f0</color>
+
+    <color name="homepageTitle">#040404 </color>
+
+    <!-- original like color #D75A4A -->
+
+
+
+
+
+</resources>

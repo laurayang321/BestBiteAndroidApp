@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/homePageBG"
+    tools:context="com.example.kevin.bestbite.MainActivity">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mockup"
+        android:id="@+id/imageView"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="70dp"
+        android:onClick="changeRecipe"
+        android:clickable="true"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:textSize="60px"
+        android:textStyle="bold"
+        android:textColor="@color/bestBiteRedDark"
+        android:id="@+id/recipeTitle" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipeTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="40px"
+        android:src="@drawable/time"
+        android:id="@+id/timer"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/timer"
+        android:layout_marginTop="55px"
+        android:layout_below="@id/recipeTitle"
+        android:textSize="40px"
+        android:clickable="true"
+        android:onClick="viewRecipe"
+        android:id="@+id/cookTime"
+        />
+
+    <ImageButton
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:background="@drawable/ic_like"
+        android:id="@+id/button_like"
+        android:layout_marginLeft="73dp"
+        android:layout_marginRight="83dp"
+        android:layout_marginBottom="19dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_toRightOf="@+id/button_unlike"
+        android:layout_toEndOf="@+id/button_unlike"
+        android:onClick="like"/>
+
+    <ImageButton
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:background="@drawable/ic_dislike"
+        android:id="@+id/button_unlike"
+        android:layout_marginLeft="83dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginBottom="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="unlike"/>
+
+
+
+</RelativeLayout>

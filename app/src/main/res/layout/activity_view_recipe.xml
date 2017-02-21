@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/uploadLayout"
+        android:background="@color/uploadGrassGreen"
+        android:gravity="bottom">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cameraGrey"
+            android:id="@+id/imageLayout">
+
+            <ImageView
+                android:id="@+id/recipeImage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+
+            <ImageView
+                android:id="@+id/backIcon"
+                android:src="@drawable/ic_back"
+                android:onClick="back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/uploadImage"
+                android:layout_alignLeft="@id/uploadImage"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="15px"
+                android:scaleType="fitXY" />
+
+
+
+            <ImageView
+                android:id="@+id/cameraIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="130px"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_camera" />
+
+            <TextView
+                android:text="Upload Photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/cameraIcon"
+                android:textSize="42px"
+                android:id="@+id/uploadPhoto" />
+
+            <TextView
+                android:text="* Please use only your own original photos.\n\n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/uploadPhoto"
+                android:textSize="36px"
+                android:textStyle="italic"
+                android:id="@+id/message"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recipe Title....."
+            android:textStyle="bold"
+            android:textSize="60px"
+            android:textColor="@color/recipeTitle"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:ems="10"
+            android:id="@+id/viewTitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Method"
+            android:textStyle="bold"
+            android:textSize="60px"
+            android:textColor="@color/recipeTitle"
+            android:id="@+id/method" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@color/backgroundWhite">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="instructions from database..."
+                android:textStyle="bold"
+                android:textSize="30px"
+                android:textColor="@color/recipeTitle"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:ems="10"
+                android:id="@+id/viewMethod" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Cooking Time"
+            android:textStyle="bold"
+            android:textSize="60px"
+            android:textColor="@color/recipeTitle"
+            android:id="@+id/time" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@color/backgroundWhite">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cooking time..."
+                android:textStyle="bold"
+                android:textSize="30px"
+                android:textColor="@color/recipeTitle"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:ems="10"
+                android:id="@+id/viewTime" />
+
+
+        </RelativeLayout>
+        <Button
+            android:text="Delete Recipe"
+            style="@style/Widget.AppCompat.Button"
+            android:background="@color/textGreen"
+            android:textColor="@color/backgroundWhite"
+            android:id="@+id/deleteRecipe"
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:onClick="deleteRecipe"
+            android:textSize="20sp" >
+        </Button>
+
+
+    </LinearLayout>
+</ScrollView>

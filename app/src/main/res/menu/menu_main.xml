@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/list_ic"
+        android:title="@string/action_viewAll"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_white_24px"
+        android:title="@string/action_search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_upload"
+        android:icon="@drawable/ic_add_white_24dp"
+        android:title="@string/action_upload"
+        app:showAsAction="always" />
+
+</menu>

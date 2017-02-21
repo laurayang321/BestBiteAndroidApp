@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- App name -->
+    <string name="app_name">BestBite</string>
+
+    <!-- Activity names -->
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_upload">Upload</string>
+
+    <!-- Action Bar strings -->
+    <string name="action_search">Search</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_upload">Upload</string>
+    <string name="action_viewAll">Recipes</string>
+    <!-- Search bar -->
+    <string name="search_placeholder">Search by keyword</string>
+    <string name="search_hint">Search by recipe title</string>
+</resources>
